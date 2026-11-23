@@ -694,7 +694,7 @@ const FAQ = [
       }
       track("form_submit", { assunto, origem_secao: currentSrc });
       try { LB.store.setItem("lb_lead", JSON.stringify(lead)); } catch (err) {}
-      location.href = "redirect.html" + location.search;
+      location.href = (/claude/.test(location.hostname) ? "redirect.html" : "/redirect") + location.search;
     } catch (err) {
       btn.disabled = false;
       $("#sendErr").hidden = false;

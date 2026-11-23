@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luz &amp; Brito Advocacia | Direito Previdenciário no Pará</title>
+<meta name="description" content="Orientação jurídica em BPC/LOAS, pensão especial do Zika, aposentadoria rural e benefícios do INSS no sul do Pará e norte do Tocantins.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://SEU-DOMINIO.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Luz &amp; Brito Advocacia | Direito Previdenciário no Pará">
+<meta property="og:description" content="BPC/LOAS, pensão especial do Zika, aposentadoria rural e benefícios do INSS no sul do Pará e norte do Tocantins.">
+<meta property="og:url" content="https://SEU-DOMINIO.com.br/">
+<meta property="og:image" content="img/hero-familia.webp">
+<meta name="theme-color" content="#0F1E38">
+<link rel="icon" type="image/png" href="logo-monograma.png">
+<link rel="preload" as="image" href="img/hero-familia.webp" type="image/webp" fetchpriority="high">
+<script src="config.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/*
+VOICE  acolhedor e direto: pouca palavra, muita imagem
+IDEA   revista de fotografia documental do sul do Pará: cada direito com um rosto
+PICTURE fotos editoriais (personagens fictícios) em grande escala, cantos arredondados
+COLOUR azul-marinho da marca, dourado da logo, terra vermelha, off-white
+TYPE   Plus Jakarta Sans | LAYOUT faixas alternadas, split foto/texto, formulário fixo no fim
+*/
+:root{
+  color-scheme:light;
+  --navy:#0F1E38; --navy-2:#182C50; --ink:#141B2B; --muted:#5D6678;
+  --paper:#F8F5EF; --sand:#EFE8DC; --white:#fff;
+  --gold:#B8913F; --gold-2:#D9B868;
+  --green:#1E9E54; --green-d:#178445;
+  --terra:#B4502C; --terra-d:#963F20;
+  --line:rgba(15,30,56,.12);
+  --r:22px; --rs:12px;
+  --font:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--font);overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.025em;line-height:1.08;text-wrap:balance}
+h1{font-size:clamp(38px,6.2vw,68px);font-weight:800}
+h2{font-size:clamp(30px,4.4vw,50px)}
+h3{font-size:clamp(20px,2.2vw,24px);letter-spacing:-.015em;line-height:1.2}
+p{margin:0 0 1em}
+.wrap{max-width:1240px;margin:0 auto;padding:0 max(5vw,18px)}
+.band{padding:clamp(72px,10vw,128px) 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--gold);margin-bottom:16px}
+.eyebrow::before{content:"";width:24px;height:2px;background:currentColor}
+.lead{font-size:clamp(18px,1.9vw,20px);color:var(--muted);max-width:52ch}
+.photo{border-radius:var(--r);overflow:hidden;background:var(--sand);position:relative}
+.photo img{width:100%;height:100%;object-fit:cover}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:14px 26px;border-radius:var(--rs);border:0;font:700 16px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:transform .15s,background .2s,box-shadow .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:20px;height:20px;flex:none}
+@media(max-width:600px){.btn{white-space:normal;text-align:center;line-height:1.3}.cta-row .btn,.zika .btn,#bpc-loas .btn,.rural .btn{width:100%}}
+.btn-gold{background:var(--green);color:#fff;box-shadow:0 10px 24px -10px rgba(30,158,84,.8)}
+.btn-gold:hover{background:var(--green-d)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2)}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+.btn-glass:hover{background:rgba(255,255,255,.24)}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--green-d);text-decoration:none;border-bottom:2px solid var(--green);padding-bottom:3px;background:none;border-top:0;border-left:0;border-right:0;cursor:pointer;font-family:var(--font);font-size:16px}
+.link svg{width:16px;height:16px}
+:focus-visible{outline:3px solid var(--gold-2);outline-offset:3px}
+
+/* Header */
+.hdr{position:fixed;inset:0 0 auto;z-index:40;transition:background .25s,box-shadow .25s;background:linear-gradient(180deg,rgba(8,16,32,.55),rgba(8,16,32,0))}
+.hdr.solid{background:rgba(248,245,239,.95);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.brand{margin-right:auto;display:block}
+.brand img{height:48px;width:auto;transition:filter .25s}
+.nav{display:flex;gap:28px}
+.nav a{text-decoration:none;font-size:15px;font-weight:600;color:#fff;white-space:nowrap;opacity:.92}
+.hdr.solid .nav a{color:var(--ink)}
+.nav a:hover{color:var(--gold-2)!important}
+.nav .btn{display:none}
+.hdr .cta{min-height:46px;padding:10px 20px;font-size:15px}
+.burger{display:none;width:48px;height:48px;border-radius:var(--rs);border:1px solid rgba(255,255,255,.4);background:rgba(15,30,56,.25);cursor:pointer;place-items:center}
+.hdr.solid .burger{border-color:var(--line);background:transparent}
+.burger span{display:block;width:20px;height:2px;background:#fff;margin:4px auto;transition:transform .2s,opacity .2s}
+.hdr.solid .burger span{background:var(--navy)}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0}
+.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media(max-width:1100px){
+  .nav,.hdr .cta{display:none}
+  .burger{display:grid}
+  .nav.open{display:flex;position:fixed;inset:76px 12px auto;flex-direction:column;gap:0;background:var(--paper);border-radius:var(--r);padding:10px 20px 20px;box-shadow:0 24px 50px -20px rgba(15,30,56,.4)}
+  .nav.open a{color:var(--ink);font-size:18px;padding:15px 0;border-bottom:1px solid var(--line)}
+  .nav.open .btn{display:flex;margin-top:16px}
+}
+@media(max-width:600px){.brand img{height:40px}}
+
+/* 1. Hero */
+.hero{position:relative;min-height:min(100svh,880px);display:flex;align-items:flex-end;color:#fff;background:var(--navy)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% 50%}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,16,32,.75) 0%,rgba(8,16,32,0) 25%),linear-gradient(90deg,rgba(8,16,32,.94) 0%,rgba(8,16,32,.85) 38%,rgba(8,16,32,.45) 62%,rgba(8,16,32,.2) 100%),linear-gradient(0deg,rgba(8,16,32,.85) 0%,rgba(8,16,32,0) 45%)}
+.hero .wrap{position:relative;width:100%;padding-top:140px;padding-bottom:clamp(40px,6vw,72px)}
+.hero>img,.region>img{z-index:0}
+.hero::before,.region::before{z-index:1}
+.hero .wrap,.region .wrap{z-index:2}
+.hero h1{max-width:12ch}
+.hero h1,.hero .lead,.hero .eyebrow,.rural-img h2,.rural-img .lead,.rural-img .eyebrow,.region h2,.region .eyebrow{text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.hero .lead{color:#DCE3EE;margin:22px 0 32px;max-width:44ch}
+.hero .eyebrow{color:var(--gold-2)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:clamp(40px,6vw,72px);padding-top:24px;border-top:1px solid rgba(255,255,255,.18)}
+.chips a{font-size:14.5px;font-weight:600;text-decoration:none;padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(6px);transition:background .2s}
+.chips a:hover{background:rgba(255,255,255,.22)}
+@media(max-width:700px){
+  .hero{min-height:auto;align-items:stretch;flex-direction:column}
+  .hero>img{position:relative;height:56vw;min-height:240px;object-position:80% 50%}
+  .hero::before{display:none}
+  .hero .wrap{padding-top:28px;background:var(--navy)}
+  .hero-top{height:76px;background:var(--navy)}
+  .chips{display:none}
+}
+@media(min-width:701px){.hero-top{display:none}}
+
+/* 2. Situações */
+.sit-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;margin-bottom:40px}
+.sit-head h2{max-width:20ch}
+.sit-head p{margin:0;color:var(--muted);max-width:38ch}
+.sits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.sit{display:flex;flex-direction:column;gap:18px;padding:24px;background:var(--white);border-radius:var(--r);text-decoration:none;color:var(--ink);border:1px solid var(--line);text-align:left;font:inherit;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s}
+.sit:hover{transform:translateY(-3px);box-shadow:0 18px 40px -22px rgba(15,30,56,.35);border-color:transparent}
+.sit .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--sand);color:var(--terra)}
+.sit .ic svg{width:24px;height:24px}
+.sit b{font-size:18px;line-height:1.35;font-weight:700;letter-spacing:-.01em}
+.sit span.go{margin-top:auto;font-size:14px;font-weight:700;color:var(--gold);display:flex;align-items:center;gap:6px}
+.sit.hl{background:var(--navy);color:#fff;border-color:var(--navy)}
+.sit.hl .ic{background:rgba(217,184,104,.16);color:var(--gold-2)}
+.sit.hl span.go{color:var(--gold-2)}
+@media(max-width:900px){.sits{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.sits{grid-template-columns:1fr}.sit{flex-direction:row;align-items:center;padding:18px}.sit b{font-size:16.5px}.sit span.go{display:none}.sit .ic{flex:none}}
+
+/* 3. Zika */
+.zika{background:var(--navy);color:#fff}
+.zika-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,80px);align-items:center}
+.zika .photo{aspect-ratio:4/5}
+.zika .photo .tag{position:absolute;left:16px;bottom:16px;background:rgba(15,30,56,.78);backdrop-filter:blur(6px);font-size:13px;font-weight:600;padding:8px 12px;border-radius:10px}
+.zika .eyebrow{color:var(--gold-2)}
+.zika .lead{color:#BFC9DA;margin:18px 0 32px}
+.nums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.num{padding:24px;border-radius:var(--r);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.num strong{display:block;font-size:clamp(34px,4.6vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1;color:#fff;white-space:nowrap}
+.num strong small{font-size:.45em;color:var(--gold-2);margin-right:4px;vertical-align:.5em}
+.num span{display:block;margin-top:10px;font-size:15px;color:#BFC9DA;line-height:1.45}
+.acum{display:flex;gap:14px;align-items:center;margin:12px 0 24px;padding:18px 22px;border-radius:var(--r);background:var(--gold);color:#fff;font-weight:700;font-size:17px}
+.acum svg{width:26px;height:26px;flex:none}
+.more{border-top:1px solid rgba(255,255,255,.14);margin-bottom:28px}
+.more summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;padding:18px 0;font-weight:700;color:#fff}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"+";font-size:24px;line-height:1;color:var(--gold-2)}
+.more[open] summary::after{content:"–"}
+.more ul{margin:0 0 10px;padding-left:20px;color:#BFC9DA;font-size:15.5px}
+.more li{margin-bottom:8px}
+.fine{font-size:13.5px;color:#8E9BB3;margin:16px 0 0}
+@media(max-width:860px){.zika-grid{grid-template-columns:1fr}.zika .photo{aspect-ratio:4/3}}
+@media(max-width:420px){.nums{grid-template-columns:1fr}}
+
+/* 4. BPC */
+.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,6vw,80px);align-items:center}
+.split .photo{aspect-ratio:4/5}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0}
+.pills li{list-style:none;padding:10px 16px;border-radius:999px;background:var(--white);border:1px solid var(--line);font-size:15px;font-weight:600}
+.pills{padding:0}
+.ticks{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-size:16.5px}
+.ticks svg{width:22px;height:22px;flex:none;color:var(--gold);margin-top:2px}
+.callout{display:flex;gap:16px;align-items:center;padding:20px 22px;border-radius:var(--r);background:var(--sand);margin-bottom:28px}
+.callout svg{width:28px;height:28px;flex:none;color:var(--terra)}
+.callout p{margin:0;font-weight:600}
+@media(max-width:860px){.split{grid-template-columns:1fr}.split .photo{aspect-ratio:4/3;order:-1}}
+
+/* 5. Rural */
+.rural{position:relative;color:#fff;background:#3A2016}
+.rural-img{position:relative;min-height:clamp(480px,48vw,640px)}
+.rural-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.rural-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,10,6,.94) 0%,rgba(18,10,6,.82) 38%,rgba(18,10,6,.4) 62%,rgba(18,10,6,.2) 100%)}
+.rural-img .wrap{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;min-height:inherit;padding-top:64px;padding-bottom:64px}
+.rural h2{max-width:13ch}
+.rural .eyebrow{color:var(--gold-2)}
+.rural .lead{color:#F1E4D8;margin:18px 0 30px;max-width:40ch}
+.docs{background:var(--terra-d);padding:30px 0}
+.docs .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.docs h3{font-size:17px;margin-right:8px;white-space:nowrap}
+.docs ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.docs li{font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.12)}
+.docs p{flex-basis:100%;margin:6px 0 0;font-size:13.5px;color:#F3D6C6}
+@media(max-width:700px){
+  .rural-img{min-height:auto}
+  .rural-img img{position:relative;height:62vw;min-height:230px}
+  .rural-img::after{display:none}
+  .rural-img .wrap{background:#3A2016;padding-top:36px;padding-bottom:40px}
+}
+
+/* 6. Incapacidade + urbana */
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{background:var(--white);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.card .photo{border-radius:0;aspect-ratio:4/3}
+.card-body{padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:12px;flex:1}
+.card-body p{margin:0;color:var(--muted)}
+.card-body .link{margin-top:auto;align-self:flex-start;padding-top:10px}
+.label{display:inline-block;align-self:flex-start;font-size:13px;font-weight:700;color:var(--terra);background:#F6E6DC;padding:5px 10px;border-radius:8px}
+@media(max-width:820px){.duo{grid-template-columns:1fr}}
+
+/* 7. Como funciona */
+.how{background:var(--sand)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px;list-style:none;padding:0}
+.steps li{background:var(--paper);border-radius:var(--r);padding:28px}
+.steps .n{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold-2);font-weight:800;font-size:17px;margin-bottom:22px}
+.steps p{margin:8px 0 0;color:var(--muted);font-size:16px}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+
+/* 8. Escritório */
+.office{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:center}
+.office-card{background:var(--navy);border-radius:var(--r);padding:clamp(28px,4vw,48px);color:#fff;display:flex;flex-direction:column;gap:28px}
+.office-card .logo{height:72px;width:auto;align-self:flex-start}
+.team{display:grid;gap:14px}
+.person{display:flex;gap:16px;align-items:center;padding-top:20px;border-top:1px solid rgba(255,255,255,.14)}
+.avatar{width:72px;height:72px;border-radius:50%;flex:none;overflow:hidden;background:var(--navy-2);border:2px solid var(--gold);display:grid;place-items:center;font-weight:700;color:var(--gold-2);font-size:22px}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.person b{display:block;font-size:18px}
+.person span{font-size:14.5px;color:#BFC9DA}
+.vals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+.vals div{padding:18px;background:var(--white);border-radius:var(--rs);border:1px solid var(--line)}
+.vals b{display:block;font-size:16px}
+.vals span{font-size:14.5px;color:var(--muted)}
+@media(max-width:860px){.office{grid-template-columns:1fr}}
+
+/* 9. Região */
+.region{position:relative;color:#fff;overflow:hidden;background:#2B1E22}
+.region>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.region::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,16,32,.62) 0%,rgba(8,16,32,.72) 55%,rgba(8,16,32,.88) 100%)}
+.region .wrap{position:relative}
+.region h2{max-width:18ch}
+.states{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px;margin-top:40px}
+.state{background:rgba(8,16,32,.7);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:24px}
+.state h3{font-size:18px;margin-bottom:14px;display:flex;justify-content:space-between;color:var(--gold-2)}
+.state h3 small{font-size:13px;color:#BFC9DA;font-weight:600}
+.state ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.state li{font-size:14.5px;font-weight:600;padding:8px 13px;border-radius:999px;background:rgba(255,255,255,.1)}
+.state li.hq{background:var(--gold);color:#fff}
+@media(max-width:820px){.states{grid-template-columns:1fr}}
+
+/* 10. FAQ */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(28px,6vw,80px)}
+.faq details{background:var(--white);border-radius:var(--rs);border:1px solid var(--line);margin-bottom:10px;padding:0 22px}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 0;font-weight:700;font-size:16.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:10px;height:10px;flex:none;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg) translate(-2px,-2px);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg)}
+.faq .ans{padding:0 0 20px;color:var(--muted);font-size:16px}
+.faq .ans p{margin:0}
+@media(max-width:860px){.faq-grid{grid-template-columns:1fr}}
+
+/* 11. Contato / formulário */
+.contact{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:clamp(32px,6vw,80px);align-items:center}
+.contact .eyebrow{color:var(--gold-2)}
+.contact .lead{color:#BFC9DA;margin:18px 0 28px}
+.contact .ticks li{color:#DCE3EE}
+.contact .ticks svg{color:var(--gold-2)}
+.form{background:var(--white);color:var(--ink);border-radius:var(--r);padding:clamp(24px,3.5vw,40px);box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.form h3{margin-bottom:6px}
+.form .sub{font-size:15px;color:var(--muted);margin:0 0 6px}
+.field{margin-top:16px}
+.field label,.field .lbl{display:block;font-weight:700;font-size:14.5px;margin-bottom:7px}
+.field input,.field select{width:100%;min-height:54px;padding:13px 16px;border:1.5px solid #D5D9E1;border-radius:var(--rs);background:#FBFBFC;font:16px var(--font);color:var(--ink)}
+.field input:focus,.field select:focus{border-color:var(--navy);outline:none;box-shadow:0 0 0 4px rgba(15,30,56,.1);background:#fff}
+.field .err{display:none;color:#B3261E;font-size:13.5px;margin-top:6px}
+.field.bad input,.field.bad select{border-color:#B3261E}
+.field.bad .err{display:block}
+.consent-note{margin:16px 0 0;font-size:13px;color:var(--muted)}
+.consent-note button{background:none;border:0;padding:0;color:var(--navy);text-decoration:underline;font:inherit;cursor:pointer}
+.consent{display:grid;grid-template-columns:22px 1fr;gap:10px;margin-top:18px;font-size:13.5px;color:var(--muted);align-items:start}
+.consent input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--navy)}
+.consent button{background:none;border:0;padding:0;color:var(--navy);text-decoration:underline;font:inherit;cursor:pointer}
+.out{display:none;margin-top:12px;padding:12px 14px;background:#FFF4E5;border-radius:10px;font-size:14px}
+.out.show{display:block}
+.form .btn{width:100%;margin-top:20px}
+.done{display:none}
+.done.show{display:block}
+.done .ok{width:56px;height:56px;border-radius:50%;background:#E8F3EC;color:#2E7D4F;display:grid;place-items:center;margin-bottom:16px}
+.done .ok svg{width:28px;height:28px}
+.notice{margin-top:14px;padding:12px 14px;background:var(--sand);font-size:14px;border-radius:10px}
+.flash{animation:flash 1.2s ease}
+@keyframes flash{0%{box-shadow:0 0 0 0 rgba(217,184,104,.9)}100%{box-shadow:0 0 0 18px rgba(217,184,104,0)}}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+
+/* Rodapé */
+.foot{background:#0A1528;color:#9DA9BE;padding:56px 0 120px;font-size:14.5px}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:32px}
+.foot img{height:56px;width:auto;margin-bottom:16px}
+.foot h4{color:#fff;font-size:15px;margin:0 0 12px}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li{padding:4px 0}
+.foot a,.foot .lk{color:#DCE3EE;text-decoration:none;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.foot a:hover,.foot .lk:hover{color:var(--gold-2)}
+.legal{margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-size:13px;color:#7D8AA3}
+.legal p{margin:0 0 6px}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+
+/* Barra fixa mobile */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:35;padding:10px max(4vw,12px) calc(10px + env(safe-area-inset-bottom));background:rgba(248,245,239,.96);backdrop-filter:blur(8px);box-shadow:0 -1px 0 var(--line);transform:translateY(110%);transition:transform .25s}
+.mbar.show{transform:none}
+.mbar .btn{width:100%}
+@media(min-width:1101px){.mbar{display:none}}
+
+/* Modal privacidade */
+.modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(10,21,40,.6)}
+.modal.open{display:flex}
+.sheet{background:var(--paper);max-width:520px;width:100%;border-radius:var(--r);padding:32px;position:relative;max-height:calc(100dvh - 32px);overflow:auto}
+.sheet h3{margin-bottom:14px;padding-right:40px}
+.sheet p{font-size:15.5px;color:var(--muted)}
+.sheet .x{position:absolute;right:14px;top:14px;width:44px;height:44px;border:0;background:none;font-size:28px;cursor:pointer;color:var(--muted)}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Luz &amp; Brito Advocacia — início"><img src="logo-luz-brito.webp" width="671" height="176" alt="Luz &amp; Brito Advocacia" fetchpriority="high"></a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#beneficios">Benefícios</a>
+      <a href="#pensao-zika">Pensão do Zika</a>
+      <a href="#escritorio">Sobre o escritório</a>
+      <a href="#duvidas">Dúvidas frequentes</a>
+      <a class="btn btn-gold" href="#contato" data-cta="geral" data-src="menu">Fale com nossa equipe</a>
+    </nav>
+    <a class="btn btn-gold cta" href="#contato" data-cta="geral" data-src="header">Fale com nossa equipe</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-top" aria-hidden="true"></div>
+  <img src="img/hero-familia.webp" width="1024" height="579" alt="Família sentada na varanda de casa, no interior do Pará, ao entardecer" fetchpriority="high" decoding="async">
+  <div class="wrap">
+    <p class="eyebrow">Luz &amp; Brito Advocacia · Conceição do Araguaia (PA)</p>
+    <h1>Advocacia em Direito Previdenciário</h1>
+    <p class="lead">BPC/LOAS, pensão do Zika, aposentadorias e benefícios do INSS para famílias do sul do Pará e do norte do Tocantins.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#contato" data-cta="geral" data-src="hero"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Conversar com um advogado</a>
+      <a class="btn btn-glass" href="#beneficios">Conhecer nossos serviços</a>
+    </div>
+    <nav class="chips" aria-label="Áreas de atuação">
+      <a href="#bpc-loas">BPC/LOAS</a><a href="#pensao-zika">Pensão do Zika</a><a href="#aposentadoria-rural">Aposentadoria rural</a><a href="#incapacidade">Afastamento por doença</a><a href="#aposentadoria-urbana">Aposentadoria urbana</a>
+    </nav>
+  </div>
+</section>
+
+<!-- SITUAÇÕES -->
+<section class="band" id="beneficios">
+  <div class="wrap">
+    <div class="sit-head rv">
+      <div><p class="eyebrow">Por onde começar</p><h2>Você ou alguém da sua família passa por isso?</h2></div>
+      <p>Cada situação tem requisitos próprios. Uma análise individual mostra quais caminhos existem.</p>
+    </div>
+    <div class="sits">
+      <a class="sit rv" href="#contato" data-cta="negado" data-src="situacoes"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9.5 13.5l5 5M14.5 13.5l-5 5"/></svg></span><b>O INSS negou meu pedido de benefício</b><span class="go">Quero orientação →</span></a>
+      <a class="sit rv" href="#bpc-loas"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="6" r="2.5"/><circle cx="17" cy="9" r="2"/><path d="M4 21v-4a5 5 0 0 1 10 0v4M14 21v-3a3 3 0 0 1 6 0v3"/></svg></span><b>Meu filho tem uma deficiência. Ele tem direito ao BPC?</b><span class="go">BPC/LOAS →</span></a>
+      <a class="sit rv" href="#aposentadoria-rural"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21V10M12 10c0-3 2-5 5-5 0 3-2 5-5 5zM12 13c0-3-2-5-5-5 0 3 2 5 5 5zM4 21h16"/></svg></span><b>Trabalho na roça. Já posso me aposentar?</b><span class="go">Aposentadoria rural →</span></a>
+      <a class="sit rv" href="#incapacidade"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/><path d="M8 12h2l1.5-3 2 5 1.5-2h2"/></svg></span><b>Estou afastado por doença ou lesão</b><span class="go">Incapacidade →</span></a>
+      <a class="sit rv" href="#aposentadoria-urbana"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 14h3M8 17h6"/></svg></span><b>Quero entender as regras da minha aposentadoria</b><span class="go">Aposentadoria urbana →</span></a>
+      <a class="sit hl rv" href="#pensao-zika"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></span><b>Minha família foi afetada pela síndrome congênita do Zika</b><span class="go">Novos direitos →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ZIKA -->
+<section class="band zika" id="pensao-zika">
+  <div class="wrap zika-grid">
+    <div class="photo rv"><img src="img/zika-mae-filho.webp" width="644" height="800" alt="Mãe abraça o filho, que usa cadeira de rodas, na sala de casa" loading="lazy" decoding="async"><span class="tag">Lei nº 15.156/2025</span></div>
+    <div class="rv">
+      <p class="eyebrow">Novo direito</p>
+      <h2>Famílias afetadas pelo Zika vírus podem ter novos direitos.</h2>
+      <p class="lead">A lei prevê indenização e pensão especial para pessoas com deficiência permanente decorrente da síndrome congênita associada ao Zika.</p>
+      <div class="nums">
+        <div class="num"><strong><small>R$</small>50 mil</strong><span>Indenização por dano moral, em parcela única, atualizada pelo INPC</span></div>
+        <div class="num"><strong>Teto</strong><span>Pensão especial mensal e vitalícia no valor do teto do INSS</span></div>
+      </div>
+      <div class="acum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/></svg>A pensão especial pode ser acumulada com o BPC/LOAS.</div>
+      <details class="more">
+        <summary>Quem pode ter direito e o que é preciso comprovar</summary>
+        <ul>
+          <li>Pessoas com deficiência permanente decorrente de síndrome congênita associada à infecção pelo Zika durante a gestação.</li>
+          <li>É exigido laudo de junta médica, analisado e homologado pela Perícia Médica Federal. O pedido é feito ao INSS.</li>
+          <li>Nem todo diagnóstico de microcefalia ou deficiência se enquadra na lei, e a infecção sem comprovação da síndrome não basta.</li>
+          <li>A pensão também acumula com benefícios previdenciários de um salário mínimo. Se houver outro pagamento da União não acumulável, a lei permite optar pelo mais vantajoso.</li>
+        </ul>
+      </details>
+      <a class="btn btn-gold" href="#contato" data-cta="zika" data-src="secao_zika"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Quero entender se minha família tem direito</a>
+      <p class="fine">Valores previstos em lei. O recebimento depende do preenchimento dos requisitos e da análise dos órgãos competentes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BPC -->
+<section class="band" id="bpc-loas">
+  <div class="wrap split">
+    <div class="rv">
+      <p class="eyebrow">BPC/LOAS</p>
+      <h2>Os direitos da pessoa com deficiência.</h2>
+      <p class="lead" style="margin-top:18px">Um salário mínimo por mês para quem atende aos requisitos da lei, mesmo sem nunca ter contribuído com o INSS.</p>
+      <ul class="pills"><li>Autismo (TEA)</li><li>TDAH</li><li>Visão monocular</li><li>Outras deficiências</li></ul>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12l5 5 9-10"/></svg>O diagnóstico sozinho não garante o benefício: são avaliados os impedimentos de longo prazo.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12l5 5 9-10"/></svg>A renda da família e o CadÚnico atualizado também entram na análise.</li>
+      </ul>
+      <div class="callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><p>Pedido negado pelo INSS? Isso não significa que todas as possibilidades terminaram.</p></div>
+      <a class="btn btn-gold" href="#contato" data-cta="bpc" data-src="secao_bpc"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Tenho dúvidas sobre o BPC/LOAS</a>
+    </div>
+    <div class="photo rv"><img src="img/bpc-pai-filho.webp" width="640" height="800" alt="Pai brinca com o filho com blocos coloridos no chão de casa" loading="lazy" decoding="async"></div>
+  </div>
+</section>
+
+<!-- RURAL -->
+<section class="rural" id="aposentadoria-rural">
+  <div class="rural-img">
+    <img src="img/rural-casal.webp" width="1024" height="512" alt="Casal de agricultores caminha entre a plantação de mandioca ao pôr do sol" loading="lazy" decoding="async">
+    <div class="wrap rv">
+      <p class="eyebrow">Aposentadoria rural</p>
+      <h2>Trabalhou na roça boa parte da vida?</h2>
+      <p class="lead">Em regra, 60 anos (homens) ou 55 (mulheres) e 15 anos de atividade rural. Sem carteira assinada.</p>
+      <div><a class="btn btn-gold" href="#contato" data-cta="rural" data-src="secao_rural"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Tenho dúvidas sobre aposentadoria rural</a></div>
+    </div>
+  </div>
+  <div class="docs">
+    <div class="wrap">
+      <h3>Documentos que podem ajudar</h3>
+      <ul><li>Autodeclaração rural</li><li>Documento da terra</li><li>Contrato de arrendamento ou parceria</li><li>Notas de produção</li><li>CAF/DAP</li><li>Sindicato ou associação</li></ul>
+      <p>Nenhum documento é obrigatório em todos os casos: o conjunto de provas depende de cada história.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INCAPACIDADE + URBANA -->
+<section class="band">
+  <div class="wrap">
+    <div class="duo">
+      <article class="card rv" id="incapacidade">
+        <div class="photo"><img src="img/incapacidade.webp" width="1024" height="772" alt="Trabalhador com o braço imobilizado lê exames na mesa da cozinha" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <span class="label">Incapacidade</span>
+          <h3>Está impossibilitado de trabalhar por doença ou lesão?</h3>
+          <p>Benefício por incapacidade temporária ou aposentadoria por incapacidade permanente, conforme os requisitos legais. Também para benefícios negados ou cessados.</p>
+          <a class="link" href="#contato" data-cta="incapacidade" data-src="secao_incapacidade">Quero entender minhas possibilidades <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </article>
+      <article class="card rv" id="aposentadoria-urbana">
+        <div class="photo"><img src="img/aposentadoria-urbana.webp" width="1024" height="772" alt="Mulher de óculos confere documentos e a carteira de trabalho" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <span class="label">Aposentadoria urbana</span>
+          <h3>Está perto de se aposentar ou tem dúvidas sobre suas contribuições?</h3>
+          <p>Idade, tempo de contribuição e regras de transição mudam o resultado. Analisar o histórico antes de pedir faz diferença.</p>
+          <a class="link" href="#contato" data-cta="urbana" data-src="secao_urbana">Quero analisar minha aposentadoria <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="band how" id="como-funciona">
+  <div class="wrap">
+    <div class="rv"><p class="eyebrow">Atendimento</p><h2>Simples assim.</h2></div>
+    <ol class="steps">
+      <li class="rv"><span class="n">01</span><h3>Entre em contato</h3><p>Conte brevemente sua situação pelo WhatsApp.</p></li>
+      <li class="rv"><span class="n">02</span><h3>Envie suas informações</h3><p>A equipe pode pedir documentos para entender seu histórico.</p></li>
+      <li class="rv"><span class="n">03</span><h3>Receba orientação</h3><p>Conheça os caminhos jurídicos possíveis para o seu caso.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ESCRITÓRIO -->
+<section class="band" id="escritorio">
+  <div class="wrap office">
+    <div class="rv">
+      <p class="eyebrow">Sobre o escritório</p>
+      <h2>Atuação jurídica próxima de quem precisa de orientação.</h2>
+      <p class="lead" style="margin-top:18px">Em Conceição do Araguaia, com foco em Direito Previdenciário. A gente ouve sua história e explica com clareza.</p>
+      <div class="vals">
+        <div><b>Linguagem simples</b><span>sem juridiquês</span></div>
+        <div><b>Perto de você</b><span>sul do PA e norte do TO</span></div>
+        <div><b>Análise individual</b><span>cada caso é um caso</span></div>
+        <div><b>Transparência</b><span>sem promessa de resultado</span></div>
+      </div>
+    </div>
+    <div class="office-card rv">
+      <img class="logo" src="logo-luz-brito.webp" width="671" height="176" alt="Luz &amp; Brito Advocacia" loading="lazy">
+      <div class="team" id="team"></div>
+    </div>
+  </div>
+</section>
+
+<!-- REGIÃO -->
+<section class="band region" id="regiao">
+  <img src="img/rio-araguaia.webp" width="1024" height="579" alt="Pescador em canoa no rio Araguaia ao amanhecer" loading="lazy" decoding="async">
+  <div class="wrap rv">
+    <p class="eyebrow" style="color:var(--gold-2)">Região de atendimento</p>
+    <h2>Sul do Pará e norte do Tocantins, dos dois lados do Araguaia.</h2>
+    <div class="states">
+      <div class="state"><h3>Pará <small>10 cidades</small></h3><ul id="citiesPA"></ul></div>
+      <div class="state"><h3>Tocantins <small>5 cidades</small></h3><ul id="citiesTO"></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="band" id="duvidas">
+  <div class="wrap faq-grid">
+    <div class="rv"><p class="eyebrow">Dúvidas frequentes</p><h2>Perguntas que a gente mais ouve.</h2></div>
+    <div class="faq" id="faq"></div>
+  </div>
+</section>
+
+<!-- CONTATO / FORMULÁRIO -->
+<section class="band contact" id="contato">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <p class="eyebrow">Fale com a equipe</p>
+      <h2>Precisa de orientação sobre um benefício do INSS?</h2>
+      <p class="lead">Deixe seu nome e WhatsApp. A conversa continua por lá.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12l5 5 9-10"/></svg>Atendimento em linguagem simples</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12l5 5 9-10"/></svg>Sul do Pará e norte do Tocantins</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12l5 5 9-10"/></svg>Seus dados protegidos pela LGPD</li>
+      </ul>
+    </div>
+    <div class="form" id="formCard">
+      <form id="leadForm" novalidate>
+        <h3>Converse com um advogado</h3>
+        <p class="sub">Só seu nome e WhatsApp.</p>
+        <div class="field"><label for="f-nome">Seu nome</label><input id="f-nome" name="nome" autocomplete="name" required><p class="err">Informe seu nome.</p></div>
+        <div class="field"><label for="f-wa">Seu WhatsApp com DDD</label><input id="f-wa" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(94) 9 0000-0000" required><p class="err">Informe um número com DDD.</p></div>
+        <input type="hidden" id="f-assunto" name="assunto" value="geral">
+        <p class="consent-note">Ao enviar, você concorda com o uso dos seus dados para retorno do contato, conforme o <button type="button" data-open="privacy">aviso de privacidade</button>.</p>
+        <button class="btn btn-gold" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Falar pelo WhatsApp</button>
+        <p id="sendErr" hidden style="color:#B3261E;font-size:13.5px;margin:10px 0 0">Não foi possível enviar agora. Tente novamente em instantes.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><img src="logo-luz-brito.webp" width="671" height="176" alt="Luz &amp; Brito Advocacia" loading="lazy"><p id="footId" style="margin:0"></p></div>
+      <div><h4>Contato</h4><ul id="footContact"></ul></div>
+      <div><h4>Navegação</h4><ul><li><a href="#bpc-loas">BPC/LOAS</a></li><li><a href="#pensao-zika">Pensão do Zika</a></li><li><a href="#aposentadoria-rural">Aposentadoria rural</a></li><li><a href="#duvidas">Dúvidas frequentes</a></li><li><button class="lk" type="button" data-open="privacy">Aviso de privacidade</button></li></ul></div>
+    </div>
+    <div class="legal"><p>Conteúdo informativo, conforme o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021. Não substitui a análise individual do caso nem constitui promessa de concessão de benefício ou de resultado. Imagens ilustrativas.</p><p>© <span id="year"></span> Luz &amp; Brito Advocacia.</p></div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><a class="btn btn-gold" href="#contato" data-cta="geral" data-src="barra_mobile"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Falar com um advogado</a></div>
+
+<div class="modal" id="privacy" role="dialog" aria-modal="true" aria-labelledby="privTitle">
+  <div class="sheet">
+    <button class="x" type="button" data-close aria-label="Fechar">×</button>
+    <h3 id="privTitle">Aviso de privacidade</h3>
+    <p>Nome e WhatsApp são usados somente para responder ao seu contato e organizar o atendimento, nos termos da LGPD (Lei nº 13.709/2018).</p>
+    <p>Os dados podem ser registrados nas ferramentas de atendimento do escritório e não são vendidos nem compartilhados para fins comerciais. A página usa cookies de medição de anúncios para entender a origem dos contatos.</p>
+    <p style="margin:0">Você pode pedir a correção ou exclusão dos seus dados a qualquer momento pelo WhatsApp do escritório.</p>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol></svg>
+
+<script>
+const CONFIG = window.CONFIG, MESSAGES = window.MESSAGES, LB = window.LB;
+
+const CITIES = {
+  PA: ["Conceição do Araguaia","Redenção","Santana do Araguaia","Rio Maria","Xinguara","Ourilândia do Norte","Tucumã","Parauapebas","Canaã dos Carajás","Marabá"],
+  TO: ["Couto Magalhães","Juarina","Bernardo Sayão","Arapoema","Pau D'Arco"]
+};
+
+const FAQ = [
+  ["Quem tem direito ao BPC/LOAS?", "Pessoas com deficiência de qualquer idade e idosos a partir de 65 anos, com renda familiar por pessoa de até 1/4 do salário mínimo (em regra) e CadÚnico atualizado. Não é preciso ter contribuído com o INSS. Para a pessoa com deficiência, há avaliação médica e social de impedimentos de no mínimo dois anos."],
+  ["Autismo dá direito ao BPC?", "Pode dar. Por lei, a pessoa com TEA é considerada pessoa com deficiência, mas o diagnóstico sozinho não basta: o INSS avalia os impedimentos no dia a dia e a renda da família."],
+  ["TDAH pode dar direito ao BPC?", "Em algumas situações. O TDAH não é deficiência automaticamente; o direito pode existir quando causa impedimentos de longo prazo e a renda familiar está dentro do critério legal."],
+  ["Quem tem visão monocular pode receber o BPC?", "A Lei nº 14.126/2021 reconhece a visão monocular como deficiência visual. Para o BPC, ainda valem a avaliação dos impedimentos e o critério de renda."],
+  ["A pensão especial do Zika pode ser acumulada com o BPC?", "Sim. A Lei nº 15.156/2025 permite acumular a pensão com o BPC e com benefícios previdenciários de um salário mínimo."],
+  ["Quem pode receber a pensão especial da Lei 15.156/2025?", "Pessoas com deficiência permanente decorrente de síndrome congênita associada ao Zika na gestação, comprovada por laudo de junta médica homologado pela Perícia Médica Federal. O pedido é feito ao INSS."],
+  ["Qual é o valor da indenização prevista na lei do Zika?", "R$ 50.000,00 em parcela única, atualizados pelo INPC desde a publicação da lei (julho de 2025) até o pagamento, desde que preenchidos os requisitos."],
+  ["Quem trabalha na roça pode se aposentar sem carteira assinada?", "Pode. O segurado especial não precisa de carteira nem de contribuição mensal. Em regra, são 60 anos (homens) ou 55 (mulheres) e 15 anos de atividade rural comprovada."],
+  ["Quais documentos ajudam a comprovar o trabalho rural?", "Autodeclaração rural, documentos da terra, contratos de arrendamento ou parceria, notas de produção, CAF/DAP e documentos de sindicato ou associação, entre outros. Não há lista única obrigatória."],
+  ["O que fazer quando o INSS nega um benefício?", "Primeiro, entender o motivo da negativa. Pode caber recurso administrativo (em regra, em até 30 dias), novo pedido com mais documentos ou ação judicial. Nem toda negativa pode ser revertida."],
+  ["Quem está afastado por doença pode receber benefício?", "Pode, se a doença ou lesão impedir o trabalho e os requisitos forem cumpridos: qualidade de segurado, carência (em regra 12 contribuições, com exceções) e incapacidade confirmada em perícia."],
+  ["Posso receber orientação morando em outra cidade da região?", "Sim. O escritório fica em Conceição do Araguaia e atende as cidades listadas nesta página. O primeiro contato é pelo WhatsApp."]
+];
+
+{
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  /* Rodapé e identidade */
+  $("#year").textContent = new Date().getFullYear();
+  $("#footId").innerHTML = ["Advocacia · Direito Previdenciário", CONFIG.brand.oab, CONFIG.brand.address || CONFIG.brand.city].filter(Boolean).map(esc).join("<br>");
+  $("#footContact").innerHTML = [
+    `<li>WhatsApp: ${CONFIG.whatsapp.number ? esc(CONFIG.whatsapp.number.replace(/^55(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3")) : "em configuração"}</li>`,
+    `<li>${esc(CONFIG.brand.city)}</li>`,
+    CONFIG.brand.email ? `<li>${esc(CONFIG.brand.email)}</li>` : ""
+  ].join("");
+
+  /* Equipe */
+  $("#team").innerHTML = CONFIG.team.filter(p => p.show && p.name).map(p => {
+    const ini = p.name.replace(/^Dra?\.\s*/, "").split(" ").filter(w => w.length > 2).map(w => w[0]).slice(0, 2).join("");
+    return `<div class="person"><div class="avatar">${p.photo ? `<img src="${esc(p.photo)}" width="144" height="144" alt="" loading="lazy">` : esc(ini)}</div><div><b>${esc(p.name)}</b><span>${esc([p.role, p.oab].filter(Boolean).join(" · "))}</span></div></div>`;
+  }).join("");
+
+  /* Região e FAQ */
+  $("#citiesPA").innerHTML = CITIES.PA.map((c, i) => `<li${i ? "" : ' class="hq"'}>${c}${i ? "" : " · sede"}</li>`).join("");
+  $("#citiesTO").innerHTML = CITIES.TO.map(c => `<li>${c}</li>`).join("");
+  $("#faq").innerHTML = FAQ.map(([q, a]) => `<details><summary>${q}</summary><div class="ans"><p>${a}</p></div></details>`).join("");
+  const ld = document.createElement("script"); ld.type = "application/ld+json";
+  ld.textContent = JSON.stringify([
+    { "@context": "https://schema.org", "@type": "LegalService", name: CONFIG.brand.name, areaServed: [...CITIES.PA.map(c => c + ", PA"), ...CITIES.TO.map(c => c + ", TO")], address: { "@type": "PostalAddress", addressLocality: "Conceição do Araguaia", addressRegion: "PA", addressCountry: "BR" } },
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }
+  ]);
+  document.head.appendChild(ld);
+
+  /* Visita (painel de leads) */
+  const utm = LB.utm; LB.origem();
+  try { LB.sbInsert("lp_visits", { site: CONFIG.supabase.site, path: location.pathname, referrer: (document.referrer || "").slice(0, 500) || null }); } catch (e) {}
+  const track = (event, data) => { dataLayer.push({ event, ...data, ...utm }); };
+
+  /* Formulário */
+  const form = $("#leadForm"), card = $("#formCard");
+  $("#f-wa").addEventListener("input", e => {
+    const d = e.target.value.replace(/\D/g, "").slice(0, 11);
+    e.target.value = d.length > 6 ? `(${d.slice(0, 2)}) ${d.slice(2, d.length - 4)}-${d.slice(-4)}` : d.length > 2 ? `(${d.slice(0, 2)}) ${d.slice(2)}` : d;
+  });
+
+  let currentSrc = "lp";
+  /* Todos os CTAs levam ao formulário, já com o assunto marcado */
+  $$("[data-cta]").forEach(b => b.addEventListener("click", e => {
+    e.preventDefault();
+    const key = b.dataset.cta; currentSrc = b.dataset.src || "lp";
+    $("#f-assunto").value = MESSAGES[key] ? key : "geral";
+    $("#nav").classList.remove("open"); $("#burger").setAttribute("aria-expanded", "false");
+    $("#contato").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    card.classList.remove("flash"); void card.offsetWidth; card.classList.add("flash");
+    setTimeout(() => $("#f-nome").focus({ preventScroll: true }), 650);
+    track("cta_click", { assunto: key, origem: currentSrc });
+  }));
+
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const f = { nome: $("#f-nome"), whatsapp: $("#f-wa") };
+    let ok = true;
+    Object.values(f).forEach(el => {
+      const bad = el === f.whatsapp ? el.value.replace(/\D/g, "").length < 10 : !el.value.trim();
+      el.closest(".field").classList.toggle("bad", bad); if (bad) ok = false;
+    });
+    if (!ok) { form.querySelector(".bad input").focus(); return; }
+
+    const assunto = $("#f-assunto").value || "geral";
+    const digits = f.whatsapp.value.replace(/\D/g, "");
+    const lead = {
+      nome: f.nome.value.trim().slice(0, 120), whatsapp: digits, assunto, assunto_label: MESSAGES[assunto].label,
+      origem_secao: currentSrc, origem: LB.origem(), pagina: location.href.split("?")[0], criado_em: new Date().toISOString(), ...utm
+    };
+    const btn = form.querySelector('button[type="submit"]'); btn.disabled = true;
+    try {
+      const key = "lb_sent_" + digits; let already = false;
+      try { const t = +LB.store.getItem(key); already = t && (Date.now() - t < 30 * 60 * 1000); } catch (err) {}
+      if (!already) {
+        const r = await LB.sbInsert("lp_leads", { site: CONFIG.supabase.site, nome: lead.nome, whatsapp: digits, origem: lead.origem, servico: lead.assunto_label });
+        if (r && r.ok === false) throw new Error("falha");
+        try { LB.store.setItem(key, String(Date.now())); } catch (err) {}
+      }
+      if (CONFIG.crmWebhook) {
+        try { await fetch(CONFIG.crmWebhook, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(lead), keepalive: true }); } catch (err) {}
+      }
+      track("form_submit", { assunto, origem_secao: currentSrc });
+      try { LB.store.setItem("lb_lead", JSON.stringify(lead)); } catch (err) {}
+      location.href = "redirect.html" + location.search;
+    } catch (err) {
+      btn.disabled = false;
+      $("#sendErr").hidden = false;
+    }
+  });
+
+  /* Privacidade */
+  const modal = $("#privacy");
+  $$('[data-open="privacy"]').forEach(b => b.addEventListener("click", () => { modal.classList.add("open"); modal.querySelector(".x").focus(); }));
+  modal.addEventListener("click", e => { if (e.target === modal || e.target.closest("[data-close]")) modal.classList.remove("open"); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") modal.classList.remove("open"); });
+
+  /* Menu */
+  $("#burger").addEventListener("click", e => { const o = $("#nav").classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", String(o)); if (o) $("#hdr").classList.add("solid"); });
+  $$("#nav a").forEach(a => a.addEventListener("click", () => { $("#nav").classList.remove("open"); $("#burger").setAttribute("aria-expanded", "false"); }));
+
+  /* Header sólido ao rolar + barra mobile */
+  const hdr = $("#hdr"), mbar = $("#mbar");
+  const onScroll = () => { hdr.classList.toggle("solid", scrollY > 40 || $("#nav").classList.contains("open")); };
+  addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  let heroVisible = true, formVisible = false;
+  const setBar = () => mbar.classList.toggle("show", !heroVisible && !formVisible);
+  const heroObs = new IntersectionObserver(([en]) => { heroVisible = en.isIntersecting; setBar(); });
+  heroObs.observe($(".hero .cta-row"));
+  const formObs = new IntersectionObserver(([en]) => { formVisible = en.isIntersecting; setBar(); });
+  formObs.observe($("#contato"));
+
+  /* Entrada suave */
+  const rvObs = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); rvObs.unobserve(en.target); } }), { rootMargin: "0px 0px -8% 0px" });
+  $$(".rv").forEach(el => rvObs.observe(el));
+}
+</script>
+</body>
+</html>
